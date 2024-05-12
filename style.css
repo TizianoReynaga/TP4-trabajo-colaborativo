@@ -1,7 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--secundario);
+}
+:root{
+    --principal: #f6f1ec;
+    --secundario: #fcf7f3;
+    --acento: #56534e;
+    }
+  
+header{
+    width: 100%;
+    background-color: var(--principal);
+}
+
+.imgm{
+    margin-top: -3px;
+    margin-left: -5px;
+}
+#bmenu{
+    display: none;
+}
+header label{
+    display: block;
+    width: 2em;
+    height: 2em;
+    
+    border-right: 1px solid var(--acento);
+}
+header label:hover{
+    cursor: pointer;
+    background-color: var(--secundario);
+}
+.menu{
+    position: absolute;
+    background-color:var(--principal);
+    width: 30%;
+    margin-left: -500px;
+    transition: all 0.5s;
+}
+.menu ul{
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--acento);
+    
+}
+.menu li{
+    border-top:  0.5px solid var(--acento);
+    border-bottom:  0.5px solid var(--acento);
+    padding: 8px;
+}
+
+#bmenu:checked ~ .menu{
+    margin: 0px;
+}
+.menu li:hover{
+    background: #e6e2e0;
+}
+
+.logo{
+    border: 1px solid var(--acento);
+    border-radius: 100%;
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+/*Slider*/
+
 .slider{
+    margin-top: 40%;
+    margin-left: 10%;
     width: 75vw;
     height: auto;
-    margin: auto;;
+    
     overflow: hidden;
     background-color: #fff;
   
@@ -33,4 +115,54 @@
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
     }
+}
+
+@media screen and (min-width: 650px) {
+   
+    /*Menu*/
+   .menu{
+    position: relative;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    background-color: var(--principal);
+    
+   }
+   .imgm{
+    display: none;
+   }
+    #bmenu{
+        display: none;
+    } 
+    header label{
+        display: none;
+    }
+   
+    .menu ul{
+        margin: 0px;
+        list-style: none;
+        padding: 0px;
+        width: 100%; 
+        display: flex; 
+        justify-content: center; 
+        text-align: center; 
+        flex-direction: row;
+    }
+    .menu li{
+        border-top: 0px;
+        border-right: 0.5px solid var(--acento);
+        padding: 0%;
+        flex-grow: 1;
+    }
+    .menu li:hover{
+        background: #e6e2e0;
+    }
+    
+    .menu li a{
+        display:block;
+        padding: 30px;
+        text-decoration: none;
+
+    }
+
 }
