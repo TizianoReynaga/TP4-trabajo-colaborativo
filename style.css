@@ -74,7 +74,7 @@ a{
 .logo{
     border: 1px solid var(--acento);
     border-radius: 100%;
-   width: 200px;
+    width: 200px;
    height: 200px;
 }
 /*Slider*/
@@ -119,6 +119,37 @@ a{
     }
 }
 
+h3{
+    margin-top: -5%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+}
+.fila1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fila2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.perfume{
+    width: 200px;
+    height: 200px;
+}
+
+
+.perfumes{
+    text-align: center;
+    padding: 20px;
+    border:2px solid var(--acento);
+    margin: 5%;
+    border-radius: 10%;
+}
 @media screen and (min-width: 650px) {
    
     /*Menu*/
@@ -181,4 +212,20 @@ a{
         width: 400px;
         height: 304px;
     }
+    .fila1{
+        margin-top: -5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .fila2{
+        margin-top: -5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .perfumes{
+        padding: 50px;
+    }
+   
 }
