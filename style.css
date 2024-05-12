@@ -38,7 +38,7 @@ header label:hover{
 .menu{
     position: absolute;
     background-color:var(--principal);
-    width: 30%;
+    width: 20%;
     margin-left: -500px;
     transition: all 0.5s;
 }
@@ -65,27 +65,30 @@ a{
 .menu li:hover{
     background: #e6e2e0;
 }
-
+.divLogo{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    height: 300px;
+}
 .logo{
     border: 1px solid var(--acento);
     border-radius: 100%;
-    width: 50%;
-    height: 50%;
-    display: block;
-    margin: 0 auto;
-    
+   width: 200px;
+   height: 200px;
 }
-
 /*Slider*/
-
+.sliderImg{
+    width: 200px;
+    height: 150px;
+}
 .slider{
-    margin-top: 40%;
-    margin-left: 10%;
-    width: 75vw;
-    height: auto;
+    border: 1px solid var(--acento);
     
+    margin-bottom: 10%;
+    width: 100%;
+    height: auto;
     overflow: hidden;
-    background-color: #fff;
   
 }
 
@@ -98,7 +101,6 @@ a{
 
 .slider .slide{
     width: 400px;
-
 
 }
 
@@ -113,7 +115,7 @@ a{
     }
     100%{
         -webkit-transform: translateX(calc(-200px * 7));
-        transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-400px * 7));
     }
 }
 
@@ -150,7 +152,7 @@ a{
     }
     .menu li{
         border-top: 0px;
-        border-right: 0.5px solid var(--acento);
+        border-bottom: 0px;
         padding: 0%;
         flex-grow: 1;
     }
@@ -164,5 +166,19 @@ a{
         text-decoration: none;
 
     }
+    .divLogo{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .logo{
 
+        width: 350px;
+        height: 350px;
+
+    }
+
+    .sliderImg{
+        width: 400px;
+        height: 304px;
+    }
 }
