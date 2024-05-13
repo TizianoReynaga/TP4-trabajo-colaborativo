@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Nanum Myeongjo";
 }
 body{
     background-color: var(--secundario);
@@ -38,7 +39,7 @@ header label:hover{
 .menu{
     position: absolute;
     background-color:var(--principal);
-    width: 20%;
+    width: 22%;
     margin-left: -500px;
     transition: all 0.5s;
 }
@@ -72,7 +73,7 @@ a{
     height: 300px;
 }
 .logo{
-    border: 1px solid var(--acento);
+    border: 2px solid var(--acento);
     border-radius: 100%;
     width: 200px;
    height: 200px;
@@ -134,7 +135,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 10%;
+    ;
 }
 
 .perfume{
@@ -150,6 +151,14 @@ h3{
     margin: 5%;
     border-radius: 10%;
 }
+
+footer{
+    border-top: 1px solid var(--acento);
+    background-color: var(--principal);
+    padding: 50px;
+    font-size: 1em;
+    text-align: center;
+}
 @media screen and (min-width: 650px) {
    
     /*Menu*/
@@ -159,6 +168,7 @@ h3{
     margin: 0px;
     width: 100%;
     background-color: var(--principal);
+    font-size: 20px;
     
    }
    .imgm{
