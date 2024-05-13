@@ -1,0 +1,86 @@
+body {
+    font-family: "Nanum Myeongjo";
+    background-color: #f6f1ec;
+    color: #56534e;;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  h1 { 
+    text-align: center;
+    margin-bottom: 35px;
+    
+  }
+  
+  .formulario-pago {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fcf7f3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #56534e;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+  }
+  
+
+  .fila {
+   
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+ 
+  }
+
+  
+  .metodos-pago {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    gap: 13px; 
+  }
+  
+  .metodos-pago img {
+    width: 94px; 
+    height: 94px;   
+    object-fit: contain;
+  }
+
+  .confirmar-btn {
+    display: block;
+    width: 30%; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #56534e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirmar-btn:hover {
+    background-color: #56534e;
+  }
+  
+  .confirmar-btn:focus {
+    outline: none;
+  }
+
+
+ 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Pago</title>
+    <link rel="stylesheet" href="estilospagos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  
+   <h1>Métodos de Pago</h1>
+  <form>
+    <div class="formulario-pago">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" class="input" required><br><br>
+  
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" class="input" required><br><br>
+  
+      
+      <label>Elija un método de pago:</label>
+        <div class="fila">
+            <div class="metodos-pago">
+                <input type="radio" id="paypal" name="metodo_pago" value="" required>
+                <label for="paypal"><img src="imgpagos/payp.png" alt="PayPal"></label>
+                <input type="radio" id="mercadopago" name="metodo_pago" value="" required>
+                <label for="mercadopago"><img src="imgpagos/mp.png" alt="MercadoPago"></label>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="metodos-pago">
+                <input type="radio" id="cuentadni" name="metodo_pago" value="" required>
+                <label for="cuentadni"><img src="imgpagos/dni.png" alt="Cuentadni"></label>
+                <input type="radio" id="visa" name="metodo_pago" value="" required>
+                <label for="visa"><img src="imgpagos/visa.png" alt="visa"></label>
+                <input type="radio" id="mastercard" name="metodo_pago" value="" required>
+                <label for="mastercard"><img src="imgpagos/masterc.png" alt="MasterCard"></label>
+            </div>
+        </div>
+
+        <div class="fila">
+            <button type="submit" class="confirmar-btn">Confirmar Pago</button>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
