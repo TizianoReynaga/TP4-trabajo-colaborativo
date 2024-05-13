@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nanum Myeongjo";
+}
+body{
+    background-color: var(--secundario);
+}
+:root{
+    --principal: #f6f1ec;
+    --secundario: #fcf7f3;
+    --acento: #56534e;
+    }
+  
+header{
+    width: 100%;
+    background-color: var(--principal);
+}
+
+.imgm{
+    margin-top: -3px;
+    margin-left: -5px;
+}
+#bmenu{
+    display: none;
+}
+header label{
+    display: block;
+    width: 2em;
+    height: 2em;
+    
+    border-right: 1px solid var(--acento);
+}
+header label:hover{
+    cursor: pointer;
+    background-color: var(--secundario);
+}
+.menu{
+    position: absolute;
+    background-color:var(--principal);
+    width: 22%;
+    margin-left: -500px;
+}
+.menu ul{
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--acento);
+    
+}
+.menu li{
+    border-top:  0.5px solid var(--acento);
+    border-bottom:  0.5px solid var(--acento);
+    padding: 8px;
+}
+
+#bmenu:checked ~ .menu{
+    margin: 0px;
+}
+.menu li:hover{
+    background: #e6e2e0;
+}
+.divLogo{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 300px;
+}
+.logo{
+    border: 2px solid var(--acento);
+    border-radius: 100%;
+    width: 200px;
+   height: 200px;
+} 
+
+@media screen and (min-width: 650px) {
+   .menu{
+    position: relative;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    background-color: var(--principal);
+    font-size: 20px;    
+   }
+   .imgm{
+    display: none;
+   }
+    #bmenu{
+        display: none;
+    } 
+    header label{
+        display: none;
+    }   
+    .menu ul{
+        margin: 0px;
+        list-style: none;
+        padding: 0px;
+        width: 100%; 
+        display: flex; 
+        justify-content: center; 
+        text-align: center; 
+        flex-direction: row;
+    }
+    .menu li{
+        border-top: 0px;
+        border-bottom: 0px;
+        padding: 0%;
+        flex-grow: 1;
+    }
+    .menu li:hover{
+        background: #e6e2e0;
+    }    
+    .menu li a{
+        display:block;
+        padding: 30px;
+        text-decoration: none;
+    }
+    .divLogo{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .logo{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* Contacto */
+ #contacto{
+    text-align: center;
+    font-size: 1.2em;
+} 
+#contacto h2{
+    text-align: center;
+    margin: 15px;
+}
+form {
+    max-width: 400px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+}
+#mensaje {
+    resize: none; /* Desactiva la capacidad de redimensionar */
+}
+.form-control::placeholder {
+    color: #999;
+    transition: color 0.15s ease-in-out;
+}
+.form-control:focus::placeholder {
+    color: transparent;
+}
+.boton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #56534e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.boton:hover {
+    background-color:  #56534e;
+}
+
+.rrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.rrss span{
+    color: black;
+    font-size: 1em;
+}
+#iconred{
+    color: black;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+#iconred, span{
+    margin: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        max-width: 300px;
+    }
+    .rrss {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .rrss i, .rrss a {
+        font-size: 16px;
+    }
+    .rrss span {
+        font-size: 1em;
+    }
+}
+
+/* Footer */
+footer{
+    border-top: 1px solid var(--acento);
+    background-color: var(--principal);
+    padding: 50px;
+    font-size: 1em;
+    text-align: center;
+}
