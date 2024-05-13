@@ -68,8 +68,8 @@ a{
 }
 .divLogo{
     display: flex;
-    justify-content: center; /* Centra horizontalmente los elementos hijos */
-    align-items: center; /* Centra verticalmente los elementos hijos */
+    justify-content: center; 
+    align-items: center; 
     height: 300px;
 }
 .logo{
